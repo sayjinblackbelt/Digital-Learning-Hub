@@ -8,11 +8,9 @@
 
 O **Digital Learning Hub** é um projeto independente criado a partir de um protótipo institucional anterior e reorganizado como **case de portfólio autocontido**.
 
-A versão atual utiliza a linguagem visual do **NEXA Studio** como referência para layout, tipografia, grid, contraste, componentes e direção gráfica. O conteúdo permanece fictício e sanitizado, sem referências a organizações, serviços, pessoas atendidas, números operacionais ou outros elementos ligados a contextos reais.
+A versão atual utiliza a linguagem visual do **NEXA Studio** como referência para layout, tipografia, grid, contraste, componentes, motion e direção gráfica. O conteúdo permanece fictício e sanitizado.
 
 ## 🎨 Direção visual — NEXA Studio
-
-A integração foi pensada como uma relação de **design system → aplicação**:
 
 - **Space Grotesk** para títulos e identidade;
 - **DM Sans** para textos e interface;
@@ -22,8 +20,15 @@ A integração foi pensada como uma relação de **design system → aplicação
 - violet `#8b5cf6` e cyan `#22d3ee` como acentos;
 - grid técnico de 80px;
 - bordas discretas e ausência de sombras pesadas;
-- tipografia grande e expressiva no hero;
+- tipografia grande e expressiva;
+- motion sutil e progressivo;
 - componentes modulares e responsivos.
+
+## 🧩 Case studies
+
+A seção **Work** apresenta projetos fictícios dentro do mesmo sistema visual. O primeiro case, **Learning OS**, possui uma página detalhada com contexto, hipótese, decisões de design e próximos passos.
+
+O objetivo é demonstrar não apenas execução visual, mas a cadeia **problema → sistema → interface → produto**.
 
 ## 🛠️ Tecnologias
 
@@ -38,14 +43,17 @@ A integração foi pensada como uma relação de **design system → aplicação
 ## ✨ Funcionalidades
 
 - homepage editorial;
-- página de projetos demonstrativos;
+- página de projetos;
+- case study individual;
 - trilhas de aprendizagem;
 - sistema visual apresentado no próprio produto;
 - layout responsivo;
 - navegação entre páginas;
 - skip link para navegação acessível;
+- animações com `IntersectionObserver`;
+- suporte a `prefers-reduced-motion`;
+- header reativo ao scroll;
 - formulário demonstrativo;
-- validação básica no navegador;
 - conteúdo sem backend;
 - deploy automatizado via GitHub Actions.
 
@@ -61,6 +69,7 @@ digital-learning-hub/
 │   └── nexa-mark.svg
 ├── index.html
 ├── work.html
+├── project.html
 ├── about.html
 ├── contact.html
 ├── css/
@@ -74,26 +83,13 @@ digital-learning-hub/
 
 O projeto possui workflow de publicação automática em `.github/workflows/pages.yml`.
 
-A cada atualização na branch `main`, o GitHub Actions prepara o conteúdo estático e publica uma nova versão no GitHub Pages.
-
 URL esperada:
 
 `https://sayjinblackbelt.github.io/Digital-Learning-Hub/`
 
-## ▶️ Execução local
-
-```bash
-git clone https://github.com/sayjinblackbelt/Digital-Learning-Hub.git
-cd Digital-Learning-Hub
-```
-
-Abra `index.html` diretamente no navegador ou utilize **Live Server** no VS Code.
-
 ## 🔐 Sanitização e privacidade
 
-Este repositório foi estruturado para publicação pública. Não contém dados pessoais de terceiros, nomes de instituições ou projetos reais, contatos reais, credenciais, documentos restritos, dados de alunos, integrações privadas ou informações operacionais confidenciais.
-
-Qualquer conteúdo futuro destinado a este projeto deve seguir o mesmo princípio: utilizar material fictício, genérico ou devidamente autorizado.
+Este repositório foi estruturado para publicação pública. O conteúdo apresentado é fictício e não contém dados pessoais de terceiros, credenciais, documentos restritos, dados de alunos, integrações privadas ou informações operacionais confidenciais.
 
 ## 🚧 Roadmap
 
@@ -106,10 +102,11 @@ Qualquer conteúdo futuro destinado a este projeto deve seguir o mesmo princípi
 - [x] Sistema visual NEXA Studio
 - [x] Workflow de GitHub Pages
 - [x] Página de projetos
-- [x] Sistema visual apresentado como parte da experiência
+- [x] Case study individual
+- [x] Microinterações e motion system inicial
 - [ ] Testes automatizados de acessibilidade
-- [ ] Microinterações avançadas
 - [ ] Componentização adicional
+- [ ] Segundo case study detalhado
 
 ## 👨‍💻 Autor
 
