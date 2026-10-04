@@ -4,11 +4,17 @@
 
 > Protótipo educacional fictício desenvolvido como case de front-end e aplicação do sistema visual NEXA Studio.
 
+## 🌐 Live Demo
+
+**[Abrir Digital Learning Hub — GitHub Pages](https://sayjinblackbelt.github.io/Digital-Learning-Hub/)**
+
+A versão publicada é a referência visual principal deste projeto.
+
 ## Sobre
 
 O **Digital Learning Hub** é um projeto independente criado a partir de um protótipo institucional anterior e reorganizado como **case de portfólio autocontido**.
 
-A versão atual utiliza a linguagem visual do **NEXA Studio** como referência para layout, tipografia, grid, contraste, componentes, motion e direção gráfica. O conteúdo permanece fictício e sanitizado.
+A versão atual utiliza a linguagem visual do **NEXA Studio** como referência para layout, tipografia, grid, contraste, componentes, motion e direção gráfica. Todo o conteúdo apresentado é fictício e sanitizado.
 
 ## 🎨 Direção visual — NEXA Studio
 
@@ -26,9 +32,9 @@ A versão atual utiliza a linguagem visual do **NEXA Studio** como referência p
 
 ## 🧩 Case studies
 
-A seção **Work** apresenta projetos fictícios dentro do mesmo sistema visual. O primeiro case, **Learning OS**, possui uma página detalhada com contexto, hipótese, decisões de design e próximos passos.
+A seção **Work** apresenta projetos fictícios dentro do mesmo sistema visual: **Learning OS**, **Creator Lab** e **Signal / AI**, além de conceitos exploratórios.
 
-O objetivo é demonstrar não apenas execução visual, mas a cadeia **problema → sistema → interface → produto**.
+O objetivo é demonstrar a cadeia **problema → sistema → interface → produto**, combinando design, front-end e comunicação visual.
 
 ## 🛠️ Tecnologias
 
@@ -44,16 +50,16 @@ O objetivo é demonstrar não apenas execução visual, mas a cadeia **problema 
 
 - homepage editorial;
 - página de projetos;
-- case study individual;
+- múltiplos case studies;
 - trilhas de aprendizagem;
 - sistema visual apresentado no próprio produto;
 - layout responsivo;
 - navegação entre páginas;
-- skip link para navegação acessível;
+- skip link e estados de foco;
 - animações com `IntersectionObserver`;
-- suporte a `prefers-reduced-motion`;
+- suporte a `prefers-reduced-motion` e `forced-colors`;
 - header reativo ao scroll;
-- formulário demonstrativo;
+- formulário demonstrativo acessível;
 - conteúdo sem backend;
 - deploy automatizado via GitHub Actions.
 
@@ -67,15 +73,19 @@ digital-learning-hub/
 ├── assets/
 │   ├── nexa-brand-kit.svg
 │   └── nexa-mark.svg
-├── index.html
-├── work.html
-├── project.html
-├── about.html
-├── contact.html
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── main.js
+├── index.html
+├── work.html
+├── project.html
+├── creator-lab.html
+├── signal-ai.html
+├── about.html
+├── contact.html
+├── robots.txt
+├── sitemap.xml
 └── README.md
 ```
 
@@ -83,33 +93,30 @@ digital-learning-hub/
 
 O projeto possui workflow de publicação automática em `.github/workflows/pages.yml`.
 
-URL esperada:
-
-`https://sayjinblackbelt.github.io/Digital-Learning-Hub/`
+**[Acessar o projeto publicado](https://sayjinblackbelt.github.io/Digital-Learning-Hub/)**
 
 ## 🔐 Sanitização e privacidade
 
 Este repositório foi estruturado para publicação pública. O conteúdo apresentado é fictício e não contém dados pessoais de terceiros, credenciais, documentos restritos, dados de alunos, integrações privadas ou informações operacionais confidenciais.
 
-## 🚧 Roadmap
+## 🚧 Status
 
 - [x] Reposicionamento como projeto de portfólio
-- [x] Conteúdo institucional fictício
-- [x] Sanitização do contexto
+- [x] Conteúdo institucional fictício e sanitizado
 - [x] Navegação entre páginas
 - [x] Responsividade
 - [x] Acessibilidade inicial
 - [x] Sistema visual NEXA Studio
 - [x] Workflow de GitHub Pages
-- [x] Página de projetos
-- [x] Case study individual
-- [x] Microinterações e motion system inicial
-- [ ] Testes automatizados de acessibilidade
-- [ ] Componentização adicional
-- [ ] Segundo case study detalhado
+- [x] Case studies
+- [x] Microinterações e motion system
+- [x] SEO técnico básico
+- [x] README multilíngue
 
 ## 👨‍💻 Autor
 
-**Filipe G Morais**
+**Filipe Gimenes de Morais**
 
 Projeto de estudo e portfólio voltado a desenvolvimento web, design de interfaces e experiências digitais educacionais.
+
+— **Filipe Gimenes de Morais**
