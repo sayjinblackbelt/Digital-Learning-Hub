@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.add("js");
+
+  const revealItems = document.querySelectorAll(".reveal");
+  if (revealItems.length && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries, instance) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        instance.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
+
+  const header = document.querySelector("header");
+  if (header) {
+    const updateHeader = () => header.classList.toggle("is-scrolled", window.scrollY > 24);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  }
+
   const form = document.querySelector("form");
   if (!form) return;
 
