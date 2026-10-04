@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sayjinblackbelt.github.io/Digital-Learning-Hub/sitemap.xml
