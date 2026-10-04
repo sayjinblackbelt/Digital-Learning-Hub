@@ -115,8 +115,10 @@ Este repositório foi estruturado para publicação pública. O conteúdo aprese
 
 ## 👨‍💻 Autor
 
-**Filipe Gimenes de Morais**
+**Filipe G Morais**
+
+GitHub: **[sayjinblackbelt](https://github.com/sayjinblackbelt)**
 
 Projeto de estudo e portfólio voltado a desenvolvimento web, design de interfaces e experiências digitais educacionais.
 
-— **Filipe Gimenes de Morais**
+— **Filipe G Morais**
